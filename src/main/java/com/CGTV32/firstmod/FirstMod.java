@@ -60,7 +60,6 @@ public class FirstMod {
             event.accept(ModItems.BLICKY);
             event.accept(ModItems.OBAMIUM_SWORD);
             event.accept(ModItems.OBAMIUMTEMPLATE);
-            event.accept(ModItems.OBAMIUM_PICKAXE);
         }
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.OPPITE_BLOCK);

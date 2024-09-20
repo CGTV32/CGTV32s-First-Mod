@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "oppite",
+  "ingredient": {
+    "item": "firstmod:skibidi_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "firstmod:skibidi_ingot"
+  }
+}

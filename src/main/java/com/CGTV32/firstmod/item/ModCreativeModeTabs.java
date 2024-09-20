@@ -28,7 +28,12 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BLICKY.get());
 
                         output.accept(ModItems.OBAMIUM_SWORD.get());
-                        output.accept(ModItems.OBAMIUM_PICKAXE.get());
+
+                        output.accept(ModItems.RAW_SIGMITE.get());
+                        output.accept(ModItems.SIGMITE.get());
+
+                        output.accept(ModItems.SKIBIDI_ORE.get());
+                        output.accept(ModItems.SKIBIDI_INGOT.get());
                     }).build());
 
 

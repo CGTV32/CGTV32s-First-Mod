@@ -2,16 +2,14 @@ package com.CGTV32.firstmod.item;
 
 import com.CGTV32.firstmod.FirstMod;
 import com.CGTV32.firstmod.item.custom.gary.BlickyItem;
-import com.CGTV32.firstmod.item.custom.obamium.items.ObamiumPickaxeItem;
 import com.CGTV32.firstmod.item.custom.obamium.items.ObamiumSwordItem;
 import com.CGTV32.firstmod.item.custom.obamium.items.ObamiumTemplateItem;
 import net.minecraft.world.item.Item;
+import net.minecraftforge.event.GatherComponentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-
-import java.util.concurrent.locks.ReadWriteLock;
 
 public class ModItems {
 
@@ -39,8 +37,18 @@ public class ModItems {
     public static final RegistryObject<Item> OBAMIUMTEMPLATE = ITEMS.register("obamium_template",
             () -> new ObamiumTemplateItem());
 
-    public static final RegistryObject<Item> OBAMIUM_PICKAXE = ITEMS.register("obamium_pickaxe",
-            () -> new ObamiumPickaxeItem());
+    public static final RegistryObject<Item> RAW_SIGMITE = ITEMS.register("raw_sigmite",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> SIGMITE = ITEMS.register("sigmite",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> SKIBIDI_ORE = ITEMS.register("skibidi_ore",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> SKIBIDI_INGOT = ITEMS.register("skibidi_ingot",
+            () -> new Item(new Item.Properties()));
+
 
     public static void register(IEventBus eventbus){
         ITEMS.register((eventbus));
