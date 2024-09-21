@@ -1,6 +1,7 @@
 package com.CGTV32.firstmod.blocks;
 
 import com.CGTV32.firstmod.FirstMod;
+import com.CGTV32.firstmod.blocks.custom.JoshBlock;
 import com.CGTV32.firstmod.item.ModItems;
 
 import net.minecraft.util.valueproviders.UniformInt;
@@ -42,6 +43,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> OBAMIUM_BLOCK = registerBlock("obamium_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(5f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> JOSHBLOCK = registerBlock("josh_block",
+            () -> new JoshBlock(BlockBehaviour.Properties.of()
+                    .strength(5F)
                     .requiresCorrectToolForDrops()));
 
 

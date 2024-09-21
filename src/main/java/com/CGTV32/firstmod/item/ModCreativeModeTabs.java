@@ -49,6 +49,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.OPPITE_ORE.get());
                         output.accept(ModBlocks.OBAMIUM_BLOCK.get());
 
+                        output.accept(ModBlocks.JOSHBLOCK.get());
+
                     })
                     .build());
 
