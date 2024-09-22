@@ -49,6 +49,9 @@ public class ModItems {
     public static final RegistryObject<Item> SKIBIDI_INGOT = ITEMS.register("skibidi_ingot",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> CUM = ITEMS.register("cum",
+            () -> new Item(new Item.Properties()));
+
 
     public static void register(IEventBus eventbus){
         ITEMS.register((eventbus));

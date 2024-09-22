@@ -2,6 +2,8 @@ package com.CGTV32.firstmod.blocks;
 
 import com.CGTV32.firstmod.FirstMod;
 import com.CGTV32.firstmod.blocks.custom.JoshBlock;
+import com.CGTV32.firstmod.blocks.custom.LachyBlock;
+import com.CGTV32.firstmod.blocks.custom.OsamaBlock;
 import com.CGTV32.firstmod.item.ModItems;
 
 import net.minecraft.util.valueproviders.UniformInt;
@@ -48,7 +50,19 @@ public class ModBlocks {
     public static final RegistryObject<Block> JOSHBLOCK = registerBlock("josh_block",
             () -> new JoshBlock(BlockBehaviour.Properties.of()
                     .strength(5F)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.ANVIL)));
+
+    public static final RegistryObject<Block> LACHYBLOCK = registerBlock("lachy_block",
+            () -> new LachyBlock(BlockBehaviour.Properties.of()
+                    .strength(4F)
                     .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> OSAMABLOCK = registerBlock("osama_block",
+            () -> new OsamaBlock(BlockBehaviour.Properties.of()
+                    .strength(4F)
+                    .requiresCorrectToolForDrops()));
+
 
 
 

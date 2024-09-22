@@ -34,6 +34,8 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.SKIBIDI_ORE.get());
                         output.accept(ModItems.SKIBIDI_INGOT.get());
+
+                        output.accept(ModItems.CUM.get());
                     }).build());
 
 
@@ -50,6 +52,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.OBAMIUM_BLOCK.get());
 
                         output.accept(ModBlocks.JOSHBLOCK.get());
+                        output.accept(ModBlocks.LACHYBLOCK.get());
 
                     })
                     .build());
