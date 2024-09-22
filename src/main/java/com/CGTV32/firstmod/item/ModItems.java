@@ -50,7 +50,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> CUM = ITEMS.register("cum",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties()
+                    .food(ModFoodProperties.CUM)));
 
 
     public static void register(IEventBus eventbus){

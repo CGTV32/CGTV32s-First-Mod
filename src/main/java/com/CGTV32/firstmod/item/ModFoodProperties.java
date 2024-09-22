@@ -8,9 +8,8 @@ import net.minecraft.world.food.FoodProperties;
 
 public class ModFoodProperties {
     public static final FoodProperties CUM = new FoodProperties.Builder()
-            .nutrition(3)
-            .saturationModifier(5)
+            .nutrition(20)
+            .saturationModifier(20)
             .effect(new MobEffectInstance(MobEffects.GLOWING, 400), 1F)
-            .usingConvertsTo(ModBlocks.OSAMABLOCK.get())
             .build();
 }
