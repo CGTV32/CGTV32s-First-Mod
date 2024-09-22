@@ -1,6 +1,7 @@
 package com.CGTV32.firstmod.item;
 
 import com.CGTV32.firstmod.FirstMod;
+import com.CGTV32.firstmod.item.custom.FuelItem;
 import com.CGTV32.firstmod.item.custom.gary.BlickyItem;
 import com.CGTV32.firstmod.item.custom.obamium.items.ObamiumSwordItem;
 import com.CGTV32.firstmod.item.custom.obamium.items.ObamiumTemplateItem;
@@ -53,6 +54,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()
                     .food(ModFoodProperties.CUM)));
 
+    public static final RegistryObject<Item> PURE_EJACULATE = ITEMS.register("pure_ejaculate",
+            () -> new FuelItem(new Item.Properties(), 3000));
 
 
     public static void register(IEventBus eventbus){

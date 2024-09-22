@@ -17,7 +17,8 @@ public class EmoBlock extends Block {
 
     public void stepOn(Level pLevel, BlockPos pPos, BlockState pState, Entity pEntity){
         if(!pLevel.isClientSide && pEntity instanceof LivingEntity) {
-            ((LivingEntity) pEntity).addEffect(new MobEffectInstance(MobEffects.WITHER));
+            ((LivingEntity) pEntity).addEffect(new MobEffectInstance(MobEffects.WITHER, 100, 1));
+            ((LivingEntity) pEntity).addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 100, 1));
         }
         super.stepOn(pLevel, pPos, pState, pEntity);
     }

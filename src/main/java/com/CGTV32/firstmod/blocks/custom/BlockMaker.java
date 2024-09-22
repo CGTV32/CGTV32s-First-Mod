@@ -29,6 +29,9 @@ public class BlockMaker extends Block {
             else if(itemEntity.getItem().getItem() == Items.BLACK_DYE){
                 itemEntity.setItem(new ItemStack(ModBlocks.LACHYBLOCK.get(), itemEntity.getItem().getCount()));
             }
+            else if(itemEntity.getItem().getItem() == Items.TNT && itemEntity.getItem().getCount() == 64){
+                itemEntity.setItem(new ItemStack(ModBlocks.OSAMABLOCK.get(), itemEntity.getItem().getCount()));
+            }
         }
         super.stepOn(pLevel, pPos, pState, pEntity);
     }
