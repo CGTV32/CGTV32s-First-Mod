@@ -1,9 +1,7 @@
 package com.CGTV32.firstmod.blocks;
 
 import com.CGTV32.firstmod.FirstMod;
-import com.CGTV32.firstmod.blocks.custom.JoshBlock;
-import com.CGTV32.firstmod.blocks.custom.LachyBlock;
-import com.CGTV32.firstmod.blocks.custom.OsamaBlock;
+import com.CGTV32.firstmod.blocks.custom.*;
 import com.CGTV32.firstmod.item.ModItems;
 
 import net.minecraft.util.valueproviders.UniformInt;
@@ -61,6 +59,21 @@ public class ModBlocks {
     public static final RegistryObject<Block> OSAMABLOCK = registerBlock("osama_block",
             () -> new OsamaBlock(BlockBehaviour.Properties.of()
                     .strength(4F)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> CAMBLOCK = registerBlock("cam_block",
+            () -> new CamBlock(BlockBehaviour.Properties.of()
+                    .strength(1F)
+                    .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> EMOBLOCK = registerBlock("emo_block",
+            () -> new EmoBlock(BlockBehaviour.Properties.of()
+                    .strength(0F)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.GLASS)));
+    public static final RegistryObject<Block> BLOCKMAKER = registerBlock("block_maker",
+            () -> new BlockMaker(BlockBehaviour.Properties.of()
+                    .strength(5F)
                     .requiresCorrectToolForDrops()));
 
 
