@@ -5,12 +5,17 @@ import com.CGTV32.firstmod.item.custom.FuelItem;
 import com.CGTV32.firstmod.item.custom.gary.BlickyItem;
 import com.CGTV32.firstmod.item.custom.obamium.items.ObamiumSwordItem;
 import com.CGTV32.firstmod.item.custom.obamium.items.ObamiumTemplateItem;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraftforge.event.GatherComponentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.List;
 
 public class ModItems {
 
@@ -39,7 +44,13 @@ public class ModItems {
             () -> new ObamiumTemplateItem());
 
     public static final RegistryObject<Item> RAW_SIGMITE = ITEMS.register("raw_sigmite",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties()){
+                @Override
+                public void appendHoverText(ItemStack pStack, TooltipContext pContext, List<Component> pTooltipComponents, TooltipFlag pTooltipFlag) {
+                    pTooltipComponents.add(Component.translatable("tooltip.firstmod.emo_block"));
+                    super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);
+                }
+            });
 
     public static final RegistryObject<Item> SIGMITE = ITEMS.register("sigmite",
             () -> new Item(new Item.Properties()));

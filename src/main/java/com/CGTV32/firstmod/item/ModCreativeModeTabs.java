@@ -55,6 +55,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.LACHYBLOCK.get());
                         output.accept(ModBlocks.OSAMABLOCK.get());
                         output.accept(ModBlocks.CAMBLOCK.get());
+                        output.accept(ModBlocks.BLOCKMAKER.get());
 
                     })
                     .build());
