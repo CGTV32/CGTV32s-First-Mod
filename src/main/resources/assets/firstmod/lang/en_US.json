@@ -9,10 +9,6 @@
 
   "item.firstmod.raw_obamium": "Raw Obamium",
 
-  "item.firstmod.obamium_sword": "Obamium Sword",
-
-  "item.firstmod.obamium_pickaxe": "Obamium Pickaxe",
-
   "item.firstmod.obamium_template": "Obamium Template",
 
   "item.firstmod.raw_sigmite": "Raw Sigmite",
@@ -26,6 +22,16 @@
   "item.firstmod.cum": "Bucket of Cum",
 
   "item.firstmod.pure_ejaculate": "Pure Ejaculate",
+
+  "item.firstmod.obamium_sword": "Obamium Sword",
+
+  "item.firstmod.obamium_pickaxe": "Obamium Pickaxe",
+
+  "item.firstmod.obamium_axe": "Obamium Axe",
+
+  "item.firstmod.obamium_shovel": "Obamium Shovel",
+
+  "item.firstmod.obamium_hoe": "Obamium Hoe",
 
   "block.firstmod.josh_block": "Josh Block",
 

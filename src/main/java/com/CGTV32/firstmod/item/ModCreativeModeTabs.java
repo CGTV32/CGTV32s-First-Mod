@@ -28,6 +28,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BLICKY.get());
 
                         output.accept(ModItems.OBAMIUM_SWORD.get());
+                        output.accept(ModItems.OBAMIUM_PICKAXE.get());
+                        output.accept(ModItems.OBAMIUM_AXE.get());
+                        output.accept(ModItems.OBAMIUM_SHOVEL.get());
+                        output.accept(ModItems.OBAMIUM_HOE.get());
 
                         output.accept(ModItems.RAW_SIGMITE.get());
                         output.accept(ModItems.SIGMITE.get());
