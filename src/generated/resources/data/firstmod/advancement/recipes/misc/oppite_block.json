@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_oppite": {
+      "conditions": {
+        "items": [
+          {
+            "items": "firstmod:oppite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "firstmod:oppite_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_oppite"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "firstmod:oppite_block"
+    ]
+  }
+}
